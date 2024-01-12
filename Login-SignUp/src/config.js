@@ -5,7 +5,8 @@ const connect = mongoose.connect("mongodb+srv://satkumar2929:x0pR6Lsug2wVGsTr@te
 //to check if the connection was successful
 connect.then(() => {
   console.log("Database connected Successfully");
-}).catch(() => {
+}).catch((error) => {
+  console.log(error)
   console.log("Database cannot be connected");
 })
 
